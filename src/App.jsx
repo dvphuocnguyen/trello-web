@@ -1,28 +1,9 @@
-import { useState } from 'react'
-import Button from '@mui/material/Button'
-import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
-import ThreeDRotation from '@mui/icons-material/ThreeDRotation';
-import HomeIcon from '@mui/icons-material/Home';
-
-
+import Board from './pages/Boards/_id'
 
 function App() {
-  return (
-    <>
-      <Button variant="text">Text</Button>
-      <Button variant="contained">Contained</Button>
-      <Button variant="outlined">Outlined</Button>
-      <br/>
 
-      <AccessAlarmIcon />
-      <HomeIcon />
-      <HomeIcon color="primary" />
-      <HomeIcon color="secondary" />
-      <HomeIcon color="success" />
-      <HomeIcon color="action" />
-      <HomeIcon color="disabled" />
-      <HomeIcon />
-    </>
+  return (
+    <Board/>
   )
 }
 
