@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box } from '@mui/material'
-    function BoardBar() {
+function BoardBar() {
   return (
     <Box sx={{
       backgroundColor:'primary.light',
