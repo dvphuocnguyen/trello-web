@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Container from '@mui/material/Container'
 import BoardBar from './BoardBar'
 import BoardContent from './BoardContent'
@@ -9,7 +8,7 @@ function Board() {
   return (
     <>
       <AppBar/>
-      <Container maxWidth={false} sx={{ height:'100vh', backgroundColor:'primary.main' }}>
+      <Container disableGutters maxWidth={false} sx={{ height:'100vh' }}>
         <BoardBar/>
         <BoardContent/>
       </Container>

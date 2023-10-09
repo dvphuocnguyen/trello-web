@@ -1,21 +1,13 @@
 import React from 'react'
-import Button from '@mui/material/Button'
 import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
 import Box from '@mui/material/Box'
 //
 import Divider from '@mui/material/Divider'
-import ListItemText from '@mui/material/ListItemText'
 import ListItemIcon from '@mui/material/ListItemIcon'
-import Typography from '@mui/material/Typography'
-import ContentCut from '@mui/icons-material/ContentCut'
-import ContentCopy from '@mui/icons-material/ContentCopy'
-import ContentPaste from '@mui/icons-material/ContentPaste'
-import Cloud from '@mui/icons-material/Cloud'
 //
 
 import Avatar from '@mui/material/Avatar'
-import navata from '~/assets/anh-scp1.jpg'
 
 import IconButton from '@mui/material/IconButton'
 
@@ -40,13 +32,13 @@ function Profile() {
         <IconButton
           onClick={handleClick}
           size="small"
-          sx={{ padding: 1 }}
+          sx={{ padding: 1, color: 'white' }}
           aria-controls={open ? 'basic-menu-Profile' : undefined}
           aria-haspopup="true"
           aria-expanded={open ? 'true' : undefined}
         >
           <Avatar sx={{ width: 32, height: 32 }}
-            src={navata}
+            src={Avatar}
           />
         </IconButton>
       </Tooltip>
@@ -66,10 +58,10 @@ function Profile() {
         }}
       >
         <MenuItem onClick={handleClose}>
-          <Avatar sx={{width:28, height:28, mr:2 }}/> Profile
+          <Avatar sx={{ width:28, height:28, mr:2 }}/> Profile
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Avatar sx={{width:28, height:28, mr:2 }}/> My account
+          <Avatar sx={{ width:28, height:28, mr:2 }}/> My account
         </MenuItem>
         <Divider />
         <MenuItem onClick={handleClose}>
